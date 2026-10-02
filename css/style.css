@@ -1,0 +1,4212 @@
+/* =========================================
+   FULL SCREEN
+========================================= */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+html,
+body {
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+}
+
+
+/* ให้ page เต็มหน้าจอ */
+.page {
+    width: 100%;
+    max-width: none;
+
+    margin: 0;
+    padding: 0;
+
+    background: #ffffff;
+}
+
+
+/* กันทุกส่วนไม่ให้เกินจอ */
+.site-header,
+.top-navbar,
+.banner,
+.main-navbar {
+    width: 100%;
+}
+
+
+/* รูป Banner เต็มความกว้าง */
+.banner {
+    margin: 0;
+    padding: 0;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.site-header {
+    width: 100%;
+    background: #ffffff;
+}
+
+
+/* =========================================
+   TOP NAVBAR
+========================================= */
+
+.top-navbar {
+    width: 100%;
+    height: 95px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 35px;
+
+    background: #ffffff;
+}
+
+
+/* LOGO */
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 80px;
+    margin-right: 5px;
+
+    display: block;
+}
+
+
+/* TITLE */
+
+.navbar-title {
+    margin-left: 25px;
+
+    color: #777777;
+
+    font-size: 25px;
+    font-weight: 400;
+
+    white-space: nowrap;
+}
+
+
+/* LOGIN BUTTON */
+
+.login-button {
+      margin-left: auto;
+
+    width: 165px;
+    height: 52px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #ffffff;
+    color: #ed8b19;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+
+    cursor: pointer;
+    transition: 0.2s;
+
+    /* จัดข้อความให้อยู่กลางปุ่ม */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* สำหรับ <a> */
+    text-decoration: none;
+    text-align: center;
+
+    /* ป้องกันขนาดเพี้ยน */
+    box-sizing: border-box;
+
+}
+
+.login-button:hover {
+    background: #ec8f37;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   BANNER
+========================================= */
+
+.banner {
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #ffffff;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   MAIN NAVBAR
+========================================= */
+
+.main-navbar {
+    width: 100%;
+    height: 92px;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    background: #f5a01b;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   NAV ITEM
+========================================= */
+
+.nav-item {
+    width: 105px;
+    height: 80px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    position: relative;
+
+    flex-shrink: 0;
+}
+
+
+/* เอา margin เดิมออก */
+
+.nav-item:first-child {
+    margin-left: 0;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.nav-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    font-size: 32px;
+
+    line-height: 1;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.nav-item span {
+    color: #ffffff;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0.301);
+
+    border-radius: 8px;
+}
+
+/* =========================================
+   NEWS ANNOUNCEMENT
+========================================= */
+
+.news-box {
+    width: 90%;
+    margin: 30px auto;
+
+    padding: 35px 70px 45px;
+
+    background: #fffaf3;
+
+    border: 1px solid #e9e1d8;
+
+    border-radius: 12px;
+
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.06);
+
+    box-sizing: border-box;
+    
+}
+
+
+/* =========================================
+   NEWS TITLE
+========================================= */
+
+.news-box .news-title {
+    margin: 0 0 24px;
+
+    padding: 0;
+
+    border: none;
+
+    color: #d96b1d;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   NEWS LIST
+========================================= */
+
+.news-box .news-list {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+    
+    
+}
+.news-box .news-row:hover {
+    background: #f1f0ef;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   NEWS ROW
+========================================= */
+
+.news-box .news-row {
+    width: 100%;
+
+    min-height: 68px;
+
+    background: #ffffff;
+
+    border-radius: 11px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 25px 0 20px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+/* =========================================
+   LEFT SIDE
+========================================= */
+
+.news-box .news-left {
+    min-width: 0;
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+/* =========================================
+   MEGAPHONE
+========================================= */
+
+.news-box .news-megaphone {
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #fbe5d1;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+
+    color: #ed8b19;
+}
+
+
+/* =========================================
+   NEWS DETAIL
+========================================= */
+
+.news-box .news-detail {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 4px;
+}
+
+
+/* ประเภทข่าว */
+
+.news-box .news-type {
+    color: #e87524;
+
+    font-size: 11px;
+
+    line-height: 1;
+}
+
+
+/* ข้อความข่าว */
+
+.news-box .news-text {
+    color: #333333;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================
+   NEW / HOT
+========================================= */
+
+.news-box .news-hot {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 7px;
+
+    padding: 3px 7px;
+
+    border-radius: 10px;
+
+    background: #ff4b4b;
+
+    color: #ffffff;
+
+    font-size: 9px;
+
+    line-height: 1;
+}
+
+
+/* =========================================
+   DATE
+========================================= */
+
+.news-box .news-date {
+    width: 85px;
+
+    flex-shrink: 0;
+
+    min-height: 42px;
+
+    margin-left: 20px;
+
+    padding-left: 20px;
+
+    border-left: 1px solid #eeeeee;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.news-box .news-date strong {
+    color: #333333;
+
+    font-size: 23px;
+
+    line-height: 1;
+
+    font-weight: bold;
+}
+
+
+.news-box .news-date small {
+    margin-top: 5px;
+
+    color: #888888;
+
+    font-size: 10px;
+
+    line-height: 1;
+}
+
+
+/* =========================================
+   MORE BUTTON
+========================================= */
+
+.news-box .news-more-btn {
+    display: block;
+
+    width: 200px;
+    height: 45px;
+
+    margin: 30px auto 0;
+
+    padding: 0;
+
+    border: 1px solid #f58220;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    color: #e87524;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.news-box .news-more-btn:hover {
+    background: #f58220;
+
+    color: #ffffff;
+}
+
+/* =========================================
+   FACULTY SECTION
+========================================= */
+
+.faculty-section {
+    width: 90%;
+    margin: 30px auto 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.faculty-heading {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.faculty-heading h2 {
+    margin: 0;
+
+    padding: 0;
+
+    color: #d96b1d;
+
+    font-size: 23px;
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+.faculty-heading::after {
+    content: "";
+
+    flex: 1;
+
+    height: 3px;
+
+    margin-left: 8px;
+
+    background: #d96b1d;
+}
+
+
+/* =========================================================
+   FACULTY CONTENT
+========================================================= */
+
+.faculty-content {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    gap: 25px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LEFT : FACULTY LIST
+========================================================= */
+
+.faculty-list {
+    width: calc(60% - 12.5px);
+
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 27px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   FACULTY CARD
+========================================================= */
+
+.faculty-card {
+    position: relative;
+
+    width: 100%;
+    height: 250px;
+
+    background: #f1d5c7;
+
+    border-radius: 15px;
+
+    box-sizing: border-box;
+
+    overflow: visible;
+
+    /*
+       เวลาเปิด/ปิด ให้การ์ดขยายอย่างนุ่มนวล
+       และดันการ์ดถัดไปลง
+    */
+    transition: height 0.4s ease;
+}
+
+
+/* =========================================================
+   FACULTY CARD : ACTIVE
+   เปิดแล้วขยายลงด้านล่าง
+========================================================= */
+
+.faculty-card.active {
+    height: 420px;
+
+    /*
+       สำคัญ:
+       ไม่ใช้ margin-top ติดลบ
+       เพื่อไม่ให้การ์ดไปทับการ์ดด้านบน
+    */
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   ORANGE AREA
+========================================================= */
+
+.faculty-orange {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 78%;
+    height: 125px;
+
+    background: #f5a01b;
+
+    border-radius: 0 22px 22px 0;
+
+    z-index: 1;
+
+    transition: height 0.4s ease;
+}
+
+
+/*
+   ตอนเปิดการ์ด
+   ให้สีส้มขยายตามการ์ด
+*/
+
+.faculty-card.active .faculty-orange {
+    height: 210px;
+}
+
+
+/* =========================================================
+   FACULTY PERSON
+========================================================= */
+
+.faculty-person {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 280px;
+
+    object-fit: contain;
+    object-position: left bottom;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   FACULTY NAME BUTTON
+========================================================= */
+
+.faculty-name {
+    position: absolute;
+
+    right: 25px;
+    bottom: 28px;
+
+    width: 320px;
+    height: 68px;
+
+    padding: 0 12px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #e87524;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    transition:
+        background 0.2s ease,
+        bottom 0.4s ease;
+}
+
+
+/* =========================================================
+   FACULTY NAME TEXT
+========================================================= */
+
+.faculty-name span {
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.faculty-name b {
+    color: #ed8b19;
+
+    font-size: 30px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    margin-left: 5px;
+
+    transition: transform 0.35s ease;
+}
+
+
+/* หมุนลูกศรเมื่อเปิด */
+
+.faculty-card.active .faculty-name b {
+    transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   FACULTY NAME HOVER
+========================================================= */
+
+.faculty-name:hover {
+    background: rgba(211, 85, 12, 0.877);
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   FACULTY DETAIL
+   รายละเอียดคณะ
+========================================================= */
+
+.faculty-detail {
+    position: absolute;
+
+    /* ตำแหน่งด้านขวาของรูปคน */
+    left: 43%;
+    top: 25px;
+
+    /* พื้นที่สำหรับข้อความ */
+    width: calc(57% - 35px);
+
+    max-height: 0;
+
+    opacity: 0;
+
+    overflow: hidden;
+
+    padding: 0;
+
+    background: transparent;
+
+    box-sizing: border-box;
+
+    z-index: 4;
+
+    transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease,
+        padding 0.4s ease;
+}
+
+
+/* =========================================================
+   FACULTY DETAIL : ACTIVE
+========================================================= */
+
+.faculty-card.active .faculty-detail {
+
+    max-height: 300px;
+
+    opacity: 1;
+
+    padding: 8px 8px 10px 0;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ข้อความอธิบายคณะ
+========================================================= */
+
+.faculty-detail p {
+
+    margin: 0 0 16px;
+
+    color: #9b3a0d;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+    line-height: 1.7;
+
+    letter-spacing: 0.1px;
+}
+
+
+
+/* =========================================================
+   LAST PARAGRAPH
+========================================================= */
+
+.faculty-detail p:last-child {
+
+    margin-bottom: 0;
+}
+
+
+
+/* =========================================================
+   HEADING : สาขาที่เปิดสอน
+========================================================= */
+
+.faculty-detail strong {
+
+    display: inline-block;
+
+    margin-bottom: 5px;
+
+    color: #e87524;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    line-height: 1.5;
+}
+
+/* =========================================================
+   รายชื่อสาขา
+========================================================= */
+
+.faculty-detail p:last-child br {
+    line-height: 1.8;
+}
+
+
+
+
+/* =========================================================
+   ALL FACULTY BUTTON
+========================================================= */
+
+.faculty-all {
+    display: block;
+
+    width: 200px;
+    height: 45px;
+
+    margin: 30px auto 0;
+
+    padding: 0;
+
+    border: 1px solid #f58220;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    color: #e87524;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+
+/* Hover */
+
+.faculty-all:hover {
+    background: #d96b1d;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   RESPONSIVE : TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .faculty-content {
+        flex-direction: column;
+    }
+
+
+    .faculty-list {
+        width: 100%;
+    }
+
+
+    .faculty-card {
+        height: 250px;
+    }
+
+
+    .faculty-card.active {
+        height: 420px;
+
+        /*
+           ห้ามติดลบ
+        */
+        margin-top: 0;
+    }
+
+
+    .faculty-detail {
+        left: 43%;
+
+        width: calc(57% - 25px);
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE : MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .faculty-list {
+        gap: 18px;
+    }
+
+
+    .faculty-card {
+        height: 230px;
+    }
+
+
+    .faculty-card.active {
+        height: 390px;
+
+        margin-top: 0;
+    }
+
+
+    /* สีส้มตอนปกติ */
+
+    .faculty-orange {
+        width: 78%;
+
+        height: 115px;
+    }
+
+
+    /* สีส้มตอนเปิด */
+
+    .faculty-card.active .faculty-orange {
+        height: 190px;
+    }
+
+
+    /* รูปคน */
+
+    .faculty-person {
+        width: 220px;
+    }
+
+
+    /* ปุ่มชื่อคณะ */
+
+    .faculty-name {
+        right: 15px;
+
+        width: calc(100% - 30px);
+
+        height: 60px;
+
+        font-size: 18px;
+    }
+
+
+    /* รายละเอียด */
+
+    .faculty-detail {
+        left: 42%;
+
+        top: 20px;
+
+        width: calc(58% - 20px);
+    }
+
+
+    .faculty-card.active .faculty-detail {
+        padding: 5px 0;
+    }
+
+
+    .faculty-detail p {
+        font-size: 12px;
+
+        line-height: 1.5;
+    }
+}
+
+/* =========================================================
+   RIGHT : SERVICES
+========================================================= */
+
+.faculty-services {
+    width: calc(40% - 12.5px);
+
+    min-height: 400px;
+
+    padding: 28px 20px;
+
+    background: #fff3df;
+
+    border-radius: 15px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   SERVICE TITLE
+========================================================= */
+
+.faculty-services h3 {
+    width: 100%;
+
+    margin: 0 0 27px;
+
+    color: #d96b1d;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   SERVICE ITEM
+========================================================= */
+
+.service-item {
+    width: 215px;
+    height: 229.5px;
+
+    margin-bottom: 14px;
+    padding: 10px;
+
+    background: #ffffff;
+
+    border-radius: 13px;
+
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* อันสุดท้ายไม่ต้องมี margin */
+
+.service-item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   SERVICE ICON
+========================================================= */
+
+.service-icon {
+    width: 65px;
+    height: 65px;
+
+    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: #f59a18;
+
+    box-sizing: border-box;
+}
+
+
+/* SVG / รูป */
+
+.service-icon img,
+.service-icon svg {
+    width: 105px;
+    height: 105px;
+
+    display: block;
+
+    object-fit: contain;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* รูปธรรมดา */
+
+.service-icon > img {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   SERVICE TEXT
+========================================================= */
+
+.service-item p {
+    margin: 0;
+
+    color: #333333;
+
+    font-size: 18px;
+
+    line-height: 1.35;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   SERVICE HOVER
+========================================================= */
+
+.service-item:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .faculty-content {
+        flex-direction: column;
+    }
+
+    .faculty-list {
+        width: 100%;
+    }
+
+    .faculty-services {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .faculty-name {
+        right: 15px;
+
+        width: calc(100% - 30px);
+
+        font-size: 18px;
+    }
+
+    .faculty-card {
+        height: 280px;
+    }
+
+    .faculty-card.active {
+        height: 450px;
+    }
+
+    .faculty-detail {
+        top: 280px;
+    }
+
+    .faculty-card.active .faculty-detail {
+        max-height: 170px;
+    }
+
+}
+
+/* =========================================
+   RECOMMEND VIDEO SECTION
+========================================= */
+
+.recommend-section {
+    width: 90%;
+
+    margin: 45px auto 0;
+
+    padding: 0 0 25px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   LINE
+========================================= */
+
+.recommend-line {
+    width: 100%;
+
+    height: 1px;
+
+    background: #e87524;
+
+    margin: 0 0 28px;
+}
+
+.recommend-line.bottom {
+    margin: 28px 0 0;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.recommend-title {
+    margin: 0 0 25px;
+
+    padding-left: 50px;
+
+    color: #c95d1b;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================
+   VIDEO
+========================================= */
+
+.recommend-video {
+    width: 60%;
+
+    margin: 0 auto;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    background: #000000;
+}
+
+
+.recommend-video iframe {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border: none;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.recommend-button {
+    display: block;
+
+    width: 200px;
+    height: 45px;
+
+    margin: 30px auto 0;
+
+    padding: 0;
+
+    border: 1px solid #f58220;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    color: #e87524;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.recommend-button:hover {
+    background: #f58220;
+
+    color: #ffffff;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+    width: 100%;
+    margin: 35px 0 0;
+
+    background: #a94d1b;
+
+    color: #ffffff;
+
+    box-sizing: border-box;
+}
+
+/* =========================================
+   FOOTER MAIN
+========================================= */
+
+.footer-main {
+    width: 100%;
+
+    min-height: 150px;
+
+    padding: 22px 45px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   FOOTER INFO
+========================================= */
+
+.footer-info {
+    width: 58%;
+
+    display: flex;
+
+    align-items: flex-start;
+}
+
+
+.footer-logo {
+    width: 65px;
+    height: 65px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+
+    margin-right: 15px;
+}
+
+
+.footer-detail h3 {
+    margin: 0 0 7px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.footer-detail p {
+    margin: 3px 0;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FOOTER LINKS
+========================================= */
+
+.footer-links {
+    width: 25%;
+
+    padding-left: 25px;
+
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+
+    box-sizing: border-box;
+}
+
+
+.footer-links h3,
+.footer-social h3 {
+    margin: 0 0 9px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.footer-links a {
+    display: block;
+
+    margin: 5px 0;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    text-decoration: none;
+}
+
+
+.footer-links a::before {
+    content: "• ";
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   SOCIAL
+========================================= */
+
+.footer-social {
+    width: 17%;
+
+    padding-left: 25px;
+
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+
+    box-sizing: border-box;
+}
+
+
+.social-icons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.social {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 8px;
+
+    font-weight: bold;
+}
+
+
+.facebook {
+    background: #ffffff;
+    color: #a94d1b;
+}
+
+.line {
+    background: #36c45a;
+}
+
+.youtube {
+    background: #ff0000;
+}
+
+.instagram {
+    background: #e4405f;
+}
+
+.x {
+    background: #000000;
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+.footer-bottom {
+    width: 100%;
+
+    min-height: 32px;
+
+    padding: 0 5%;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-sizing: border-box;
+}
+
+.footer-bottom span {
+    color: #ffffff;
+
+    font-size: 6px;
+}
+
+
+.footer-bottom-links {
+    display: flex;
+
+    gap: 15px;
+}
+
+
+.footer-bottom-links a {
+    color: #ffffff;
+
+    font-size: 6px;
+
+    text-decoration: none;
+}
+
+/* =========================================
+   SCHEDULE SECTION
+========================================= */
+
+.schedule-section {
+    width: 90%;
+
+    margin: 35px auto 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   LINE
+========================================= */
+
+.schedule-line {
+    width: 100%;
+
+    height: 1px;
+
+    background: #e87524;
+
+    margin: 0 0 8px;
+}
+
+.schedule-line.bottom {
+    margin: 25px 0 0;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.schedule-title {
+    margin: 0 0 10px;
+
+    text-align: center;
+
+    color: #c95d1b;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   SCHEDULE BOX
+========================================= */
+
+.schedule-box {
+    width: 70%;
+
+    padding: 28px;
+
+    background: #f3d8c9;
+
+   
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   SCHEDULE IMAGE
+========================================= */
+
+.schedule-image {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact-section {
+    width: 90%;
+
+    margin: 40px auto;
+
+    padding: 25px 25px 100px;
+
+    background: #fffaf3;
+
+    border: 1px solid #eadfd4;
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.contact-title {
+    margin: 0 0 30px 0;
+
+    color: #c95d1b;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.contact-content {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        20% 60% 20%;
+
+    gap: 10px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   LEFT
+========================================= */
+
+.contact-left {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+/* =========================================
+   CONTACT CARD
+========================================= */
+
+.contact-card {
+
+    width: 100%;
+
+    padding: 14px;
+
+    background: #ffffff;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.25);
+
+    box-sizing: border-box;
+}
+
+
+.contact-card h3,
+.contact-map h3,
+.contact-form h3 {
+
+    margin: 0 0 12px;
+
+    color: #d96b1d;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   CONTACT ROW
+========================================= */
+
+.contact-row {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    margin-bottom: 10px;
+}
+
+
+.contact-row:last-child {
+    margin-bottom: 0;
+}
+
+
+.contact-icon {
+
+    width: 25px;
+    height: 25px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #f59a18;
+
+    font-size: 18px;
+}
+
+
+.contact-row strong {
+
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #555;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+.contact-row p {
+
+    margin: 0;
+
+    color: #555;
+
+    font-size: 10px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================
+   SOCIAL
+========================================= */
+
+.social-card p {
+
+    margin: 0 0 10px;
+
+    color: #555;
+
+    font-size: 10px;
+}
+
+
+.social-icons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.social-icons a {
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+.facebook {
+    background: #1877f2;
+}
+
+.line {
+    background: #06c755;
+}
+
+.youtube {
+    background: #ff0000;
+}
+
+.instagram {
+    background: #e4405f;
+}
+
+.tiktok {
+    background: #000000;
+}
+
+
+/* =========================================
+   MAP
+========================================= */
+
+.contact-map {
+
+    width: 100%;
+
+    padding: 14px;
+
+    background: #ffffff;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.25);
+
+    box-sizing: border-box;
+}
+
+
+.map-container {
+
+    width: 100%;
+
+    height: 290px;
+
+    overflow: hidden;
+
+    border-radius: 2px;
+}
+
+
+.map-container iframe {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border: 0;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.contact-form {
+
+    width: 100%;
+
+    padding: 14px;
+
+    background: #ffffff;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.25);
+
+    box-sizing: border-box;
+}
+
+
+.contact-form form {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.contact-form label {
+
+    margin-bottom: 4px;
+
+    color: #555;
+
+    font-size: 10px;
+}
+
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+
+    width: 100%;
+
+    margin-bottom: 9px;
+
+    padding: 7px 8px;
+
+    border: 1px solid #cfcfcf;
+
+    border-radius: 4px;
+
+    background: #ffffff;
+
+    color: #333;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    outline: none;
+
+    box-sizing: border-box;
+}
+
+
+.contact-form input,
+.contact-form select {
+
+    height: 32px;
+}
+
+
+.contact-form textarea {
+
+    height: 65px;
+
+    resize: none;
+}
+
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+
+    border-color: #ed8b19;
+
+    box-shadow:
+        0 0 3px rgba(237, 139, 25, 0.3);
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.contact-form button {
+
+    width: 100%;
+
+    height: 30px;
+
+    margin-top: 1px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    background: #e87524;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+
+.contact-form button:hover {
+
+    background: #c95d1b;
+}
+
+/* =========================================
+   ADMISSION / APPLICATION
+========================================= */
+
+.admission-section {
+
+    width: 90%;
+
+    margin: 35px auto;
+
+    padding: 28px 45px 45px;
+
+    background: #fffaf3;
+
+    border: 1px solid #eadfd4;
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.admission-title {
+
+    margin: 0 0 40px;
+
+    color: #c85b19;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================
+   ROUND TABS
+========================================= */
+
+.round-tabs {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 28px;
+
+    padding-left: 0;
+}
+
+
+/* ปุ่มแต่ละรอบ */
+
+.round-tab {
+
+    min-width: 90px;
+
+    height: 42px;
+
+    padding: 0 22px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #e87524;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+/* ปุ่มทั้งหมด */
+
+.round-tab.active {
+
+    min-width: 125px;
+
+    background: transparent;
+
+    color: #ed7c1c;
+
+    border-bottom: 1px solid #ed7c1c;
+
+    border-radius: 0;
+
+    font-size: 20px;
+
+    font-weight: normal;
+}
+
+
+.round-tab:hover {
+
+    background: #d96316;
+
+    color: #ffffff;
+}
+
+
+.round-tab.active:hover {
+
+    background: transparent;
+
+    color: #d96316;
+}
+
+
+/* =========================================
+   ADMISSION LIST
+========================================= */
+
+.admission-list {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* =========================================
+   ADMISSION ITEM
+========================================= */
+
+.admission-item {
+
+    width: 100%;
+
+    min-height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 10px 18px;
+
+    background: #f1d1be;
+
+    border-radius: 6px;
+
+    box-sizing: border-box;
+
+    color: #4b4b4b;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    line-height: 1.45;
+
+    transition: 0.2s;
+}
+
+
+/* ข้อความ */
+
+.admission-item>span:first-child {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.admission-arrow {
+
+    width: 22px;
+
+    height: 32px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #e87524;
+
+    font-size: 45px;
+
+    font-weight: 300;
+
+    line-height: 1;
+
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.admission-item:hover {
+
+    background: #edc5ad;
+
+    transform: translateX(2px);
+}
+
+.admission-item:hover .admission-arrow {
+
+    transform: translateX(4px);
+
+}
+
+/* =========================================
+   LOGIN - BIGGER VERSION
+========================================= */
+
+/* =========================================
+   LOGIN - REMOVE WHITE GAP
+========================================= */
+
+.login-page {
+    width: 100%;
+    height: 500px;
+    min-height: 0;
+
+    margin: 0;
+    padding: 20px 0 25px;
+
+    background: #fff3df;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+/* เอาระยะห่าง Footer ออก */
+.site-footer {
+    width: 100%;
+    margin: 0 !important;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.login-logo {
+    width: 220px;
+    height: 70px;
+
+    margin-bottom: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-logo img {
+    width: 165px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================
+   LOGIN BOX
+========================================= */
+
+.login-box {
+    width: 390px;
+    min-height: 335px;
+
+    padding: 22px 28px 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.login-box h2 {
+    margin: 0 0 22px;
+
+    color: #d96517;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    line-height: 1.2;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.login-box label {
+    display: block;
+
+    margin: 0 0 5px;
+
+    color: #333333;
+
+    font-size: 16px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    height: 42px;
+
+    padding: 7px 12px;
+
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #333333;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    outline: none;
+
+    box-sizing: border-box;
+}
+
+.login-box input::placeholder {
+    color: #999999;
+    font-size: 14px;
+}
+
+.login-box input[type="text"]:focus,
+.login-box input[type="password"]:focus {
+    border-color: #ed8b19;
+
+    box-shadow: 0 0 4px rgba(237, 139, 25, 0.25);
+}
+
+
+/* =========================================
+   PASSWORD
+========================================= */
+
+.password-box {
+    position: relative;
+
+    width: 100%;
+
+    margin-bottom: 8px;
+}
+
+.password-box input {
+    padding-right: 40px !important;
+}
+
+.password-eye {
+    position: absolute;
+
+    right: 12px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #555555;
+
+    font-size: 16px;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   OPTIONS
+========================================= */
+
+.login-options {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 14px;
+}
+
+.login-options .remember {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    margin: 0;
+
+    color: #333333;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+.login-options .remember input {
+    width: 15px;
+    height: 15px;
+
+    margin: 0;
+}
+
+.login-options a {
+    color: #168bd1;
+
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-box .login-submit,
+.login-box button {
+    width: 100%;
+    height: 42px;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #e87517;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.login-box .login-submit:hover,
+.login-box button:hover {
+    background: #d9650f;
+}
+
+
+/* =========================================
+   REGISTER
+========================================= */
+
+.register-text {
+    margin-top: 22px;
+
+    color: #555555;
+
+    font-size: 11px;
+
+    text-align: center;
+}
+
+.register-text a {
+    color: #168bd1;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .login-page {
+        padding: 20px 15px 40px;
+    }
+
+    .login-logo {
+        width: 190px;
+        height: 65px;
+    }
+
+    .login-logo img {
+        width: 145px;
+    }
+
+    .login-box {
+        width: 100%;
+        max-width: 390px;
+    }
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .admission-section {
+
+        width: 90%;
+
+        padding: 25px 30px 35px;
+    }
+
+    .admission-title {
+
+        font-size: 25px;
+
+        margin-bottom: 30px;
+    }
+
+    .round-tabs {
+
+        gap: 10px;
+
+        flex-wrap: wrap;
+    }
+
+    .round-tab {
+
+        min-width: 80px;
+
+        padding: 0 15px;
+
+        font-size: 14px;
+    }
+
+    .round-tab.active {
+
+        min-width: 100px;
+
+        font-size: 18px;
+    }
+
+    .admission-item {
+
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .admission-section {
+
+        width: 92%;
+
+        padding: 22px 18px 30px;
+
+        margin: 25px auto;
+    }
+
+    .admission-title {
+
+        font-size: 23px;
+
+        margin-bottom: 25px;
+    }
+
+    .round-tabs {
+
+        gap: 8px;
+    }
+
+    .round-tab {
+
+        height: 38px;
+
+        min-width: 70px;
+
+        padding: 0 10px;
+
+        font-size: 13px;
+    }
+
+    .round-tab.active {
+
+        min-width: 85px;
+
+        font-size: 17px;
+    }
+
+    .admission-item {
+
+        min-height: 55px;
+
+        padding: 10px 12px;
+
+        font-size: 14px;
+
+        line-height: 1.4;
+    }
+
+    .admission-arrow {
+
+        font-size: 36px;
+    }
+
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .contact-content {
+
+        grid-template-columns:
+            25% 50% 25%;
+    }
+
+    .contact-section {
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .contact-content {
+
+        grid-template-columns: 1fr;
+    }
+
+    .contact-map {
+
+        order: 2;
+    }
+
+    .contact-left {
+
+        order: 1;
+    }
+
+    .contact-form {
+
+        order: 3;
+    }
+
+    .map-container {
+
+        height: 300px;
+    }
+
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .schedule-section {
+        width: 90%;
+    }
+
+    .schedule-box {
+        padding: 22px;
+    }
+
+    .schedule-image {
+        width: 85%;
+    }
+
+    .schedule-title {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .schedule-section {
+        width: 90%;
+    }
+
+    .schedule-box {
+        padding: 15px;
+
+        border-width: 2px;
+    }
+
+    .schedule-image {
+        width: 95%;
+    }
+
+    .schedule-title {
+        font-size: 17px;
+    }
+}
+
+/* =========================================
+   FOOTER RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .site-footer {
+        width: 90%;
+    }
+
+    .footer-main {
+        padding: 20px;
+    }
+
+    .footer-info {
+        width: 55%;
+    }
+
+    .footer-links {
+        width: 25%;
+    }
+
+    .footer-social {
+        width: 20%;
+    }
+
+    .footer-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-detail h3 {
+        font-size: 10px;
+    }
+
+    .footer-detail p {
+        font-size: 7px;
+    }
+
+    .footer-bottom {
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .site-footer {
+        width: 90%;
+    }
+
+    .footer-main {
+        padding: 18px 15px;
+
+        flex-wrap: wrap;
+    }
+
+    .footer-info {
+        width: 100%;
+
+        margin-bottom: 15px;
+    }
+
+    .footer-links {
+        width: 50%;
+
+        padding-left: 10px;
+    }
+
+    .footer-social {
+        width: 50%;
+
+        padding-left: 15px;
+    }
+
+    .footer-bottom {
+        padding: 8px 15px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 5px;
+    }
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .recommend-section {
+        width: 90%;
+
+        margin-top: 35px;
+    }
+
+    .recommend-title {
+        padding-left: 25px;
+
+        font-size: 21px;
+    }
+
+    .recommend-video {
+        width: 75%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .recommend-section {
+        width: 90%;
+    }
+
+    .recommend-title {
+        padding-left: 10px;
+
+        font-size: 19px;
+    }
+
+    .recommend-video {
+        width: 90%;
+    }
+
+    .recommend-button {
+        width: 140px;
+        height: 38px;
+
+        font-size: 13px;
+    }
+
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .faculty-section {
+        width: 90%;
+    }
+
+    .faculty-content {
+        gap: 18px;
+    }
+
+    .faculty-list {
+        width: calc(70% - 9px);
+    }
+
+    .faculty-services {
+        width: calc(30% - 9px);
+
+        padding: 25px 10px;
+    }
+
+    .faculty-card {
+        height: 125px;
+    }
+
+    .faculty-person {
+        width: 175px;
+        height: 135px;
+    }
+
+    .faculty-orange {
+        height: 50px;
+    }
+
+    .faculty-name {
+        right: 15px;
+        bottom: 24px;
+
+        width: 140px;
+        height: 35px;
+
+        font-size: 10px;
+    }
+
+    .faculty-services h3 {
+        font-size: 15px;
+    }
+
+    .service-item {
+        width: 95px;
+        height: 105px;
+    }
+
+    .service-icon {
+        width: 45px;
+        height: 45px;
+
+        font-size: 30px;
+    }
+
+    .service-item p {
+        font-size: 9px;
+    }
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .faculty-section {
+        width: 90%;
+    }
+
+    .faculty-layout {
+        gap: 18px;
+    }
+
+    .faculty-list {
+        width: calc(70% - 9px);
+    }
+
+    .faculty-aside {
+        width: calc(30% - 9px);
+
+        padding: 25px 10px;
+    }
+
+    .faculty-card {
+        height: 125px;
+    }
+
+    .faculty-image {
+        width: 175px;
+        height: 135px;
+    }
+
+    .faculty-orange {
+        height: 52px;
+    }
+
+    .faculty-button {
+        right: 15px;
+        bottom: 24px;
+
+        width: 140px;
+        height: 35px;
+
+        font-size: 11px;
+    }
+
+    .faculty-aside h3 {
+        font-size: 16px;
+    }
+
+    .service-box {
+        width: 95px;
+        height: 105px;
+    }
+
+    .service-icon {
+        width: 45px;
+        height: 45px;
+
+        font-size: 32px;
+    }
+
+    .service-box span {
+        font-size: 10px;
+    }
+}
+
+/* =========================================
+   NEWS RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .news-box {
+        width: 90%;
+
+        padding: 30px 40px 38px;
+
+        margin: 25px auto;
+    }
+
+    .news-box .news-title {
+        font-size: 22px;
+    }
+
+    .news-box .news-row {
+        min-height: 62px;
+
+        padding: 0 18px;
+    }
+
+    .news-box .news-text {
+        font-size: 13px;
+    }
+
+    .news-box .news-type {
+        font-size: 10px;
+    }
+
+    .news-box .news-megaphone {
+        width: 40px;
+        height: 40px;
+
+        font-size: 19px;
+    }
+
+    .news-box .news-date {
+        width: 75px;
+
+        margin-left: 15px;
+
+        padding-left: 15px;
+    }
+
+    .news-box .news-date strong {
+        font-size: 20px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE NEWS
+========================================= */
+
+@media (max-width: 600px) {
+
+    .news-box {
+        width: 90%;
+
+        padding: 22px 18px 30px;
+
+        margin: 20px auto;
+    }
+
+    .news-box .news-title {
+        font-size: 19px;
+
+        margin-bottom: 18px;
+    }
+
+    .news-box .news-list {
+        gap: 9px;
+    }
+
+    .news-box .news-row {
+        min-height: 58px;
+
+        padding: 0 12px;
+    }
+
+    .news-box .news-left {
+        gap: 9px;
+    }
+
+    .news-box .news-megaphone {
+        width: 34px;
+        height: 34px;
+
+        font-size: 15px;
+    }
+
+    .news-box .news-text {
+        font-size: 10px;
+    }
+
+    .news-box .news-type {
+        font-size: 8px;
+    }
+
+    .news-box .news-date {
+        width: 55px;
+
+        margin-left: 8px;
+
+        padding-left: 8px;
+    }
+
+    .news-box .news-date strong {
+        font-size: 17px;
+    }
+
+    .news-box .news-date small {
+        font-size: 7px;
+    }
+
+    .news-box .news-more-btn {
+        width: 130px;
+        height: 34px;
+
+        margin-top: 22px;
+
+        font-size: 9px;
+    }
+
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .top-navbar {
+        height: 80px;
+
+        padding: 0 20px;
+    }
+
+    .navbar-logo {
+        width: 210px;
+    }
+
+    .navbar-logo img {
+        width: 205px;
+    }
+
+    .navbar-title {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+
+    .login-button {
+        width: 130px;
+        height: 45px;
+
+        font-size: 17px;
+    }
+
+    .main-navbar {
+        height: 75px;
+    }
+
+    .nav-item {
+        width: 120px;
+    }
+
+    .nav-icon {
+        font-size: 25px;
+    }
+
+    .nav-item span {
+        font-size: 11px;
+    }
+}
+
+.content-container {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    background-color: #fff3df;
+    padding: 25px 30px 50px;
+}
+
+/* หัวข้อ */
+.content-container h1 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* ข้อความอธิบาย */
+.description {
+    max-width: 950px;
+    margin: 0 auto 20px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* กล่องฟอร์ม */
+.form-box {
+    width: 500px;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 32px 40px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+    
+
+.form-group {
+    width: 100%;
+    margin-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+/* label */
+.form-group label {
+    width: 100%;
+    margin-bottom: 6px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.form-group label span {
+    color: #e74c3c;
+    margin-left: 3px;
+}
+
+
+
+/* =========================
+   ช่องกรอก
+========================= */
+
+.form-group input {
+    width: 360px;
+    max-width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #d5d5d5;
+    border-radius: 7px;
+    background: #fff;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #ed9a25;
+    box-shadow: 0 0 0 2px rgba(237, 154, 37, 0.12);
+}
+
+
+.form-group input::placeholder {
+    color: #aaa;
+}
+
+/* ปุ่มลงทะเบียน */
+.form-box button {
+    display: block;
+    width: 120px;
+    height: 30px;
+    margin: 12px auto 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #e87500;
+    color: #fff;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: #d96800;
+}
+
+/* มือถือ */
+@media (max-width: 600px) {
+
+    .content-container {
+        padding: 20px 15px;
+    }
+
+    .form-box {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .form-group {
+        display: block;
+    }
+
+    .form-group label {
+        display: block;
+        width: 100%;
+        padding: 0 0 5px;
+        text-align: left;
+    }
+
+    .form-group input {
+        max-width: 100%;
+    }
+}
+
+/* =========================================================
+   HEADER + NAVBAR RESPONSIVE
+========================================================= */
+
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+.site-header {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.top-navbar {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+
+/* โลโก้ */
+
+.navbar-logo {
+    flex-shrink: 0;
+}
+
+.navbar-logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* โลโก้ KMUTNB ตัวที่สอง */
+
+.top-navbar > img {
+    width: 200px;
+    max-width: 22vw;
+    height: auto;
+
+    object-fit: contain;
+
+    flex-shrink: 1;
+}
+
+
+/* ชื่อหน้า */
+
+.navbar-title {
+    min-width: 0;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* ปุ่มเข้าสู่ระบบ */
+
+.login-button {
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   TABLET
+   901px - 1200px
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .top-navbar {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+
+    .top-navbar > img {
+        width: 170px;
+        max-width: 20vw;
+    }
+
+
+    .navbar-title {
+        font-size: 24px;
+    }
+
+
+    .login-button {
+        width: 145px;
+        height: 48px;
+
+        font-size: 18px;
+    }
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+   ต่ำกว่า 900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .top-navbar {
+        padding: 12px 20px;
+
+        gap: 12px;
+    }
+
+
+    /* โลโก้หลัก */
+
+    .navbar-logo img {
+        width: 70px;
+    }
+
+
+    /* โลโก้ KMUTNB */
+
+    .top-navbar > img {
+        width: 150px;
+        max-width: 24vw;
+    }
+
+
+    /* ชื่อ */
+
+    .navbar-title {
+        flex: 1;
+
+        font-size: 20px;
+
+        text-align: center;
+    }
+
+
+    /* Login */
+
+    .login-button {
+        width: 125px;
+        height: 45px;
+
+        font-size: 17px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ต่ำกว่า 600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .top-navbar {
+        width: 100%;
+
+        padding: 10px 14px;
+
+        gap: 8px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       LOGO
+    ===================================================== */
+
+    .navbar-logo {
+        flex-shrink: 0;
+    }
+
+
+    .navbar-logo img {
+        width: 48px;
+
+        height: auto;
+    }
+
+
+    /* =====================================================
+       KMUTNB LOGO
+    ===================================================== */
+
+    .top-navbar > img {
+        width: 105px;
+
+        max-width: none;
+
+        height: auto;
+
+        flex-shrink: 0;
+    }
+
+
+    /* =====================================================
+       TITLE
+    ===================================================== */
+
+    .navbar-title {
+        flex: 1;
+
+        min-width: 0;
+
+        font-size: 15px;
+
+        line-height: 1.3;
+
+        text-align: center;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+
+    /* =====================================================
+       LOGIN BUTTON
+    ===================================================== */
+
+    .login-button {
+
+        width: 95px;
+
+        min-width: 95px;
+
+        height: 38px;
+
+        padding: 0 8px;
+
+        border-radius: 9px;
+
+        font-size: 14px;
+
+        box-sizing: border-box;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ต่ำกว่า 430px
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .top-navbar {
+
+        padding: 8px 10px;
+
+        gap: 6px;
+    }
+
+
+    /* Logo ซ้าย */
+
+    .navbar-logo img {
+        width: 40px;
+    }
+
+
+    /* Logo KMUTNB */
+
+    .top-navbar > img {
+        width: 85px;
+    }
+
+
+    /* ชื่อ */
+
+    .navbar-title {
+        font-size: 13px;
+    }
+
+
+    /* Login */
+
+    .login-button {
+
+        width: 82px;
+
+        min-width: 82px;
+
+        height: 34px;
+
+        font-size: 12px;
+
+        border-radius: 8px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ต่ำกว่า 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .top-navbar {
+        gap: 5px;
+
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+
+    .navbar-logo img {
+        width: 35px;
+    }
+
+
+    .top-navbar > img {
+        width: 72px;
+    }
+
+
+    .navbar-title {
+        font-size: 12px;
+    }
+
+
+    .login-button {
+        width: 72px;
+
+        min-width: 72px;
+
+        height: 32px;
+
+        font-size: 11px;
+    }
+
+}
+
+/* =========================================================
+   FORM VALIDATION
+========================================================= */
+
+.form-group {
+    position: relative;
+}
+
+
+/* =========================
+   ERROR / SUCCESS
+========================= */
+
+.form-group input.input-error {
+    border: 2px solid #e74c3c;
+    background: #fffafa;
+}
+
+.form-group input.input-success {
+    border: 2px solid #4caf50;
+}
+
+
+
+
+/* =========================
+   ERROR
+========================= */
+
+.error-message {
+    display: block;
+
+    /* ต้องอยู่บรรทัดใหม่ใต้ input */
+    width: 430px;
+    max-width: 100%;
+
+    min-height: 18px;
+    height: auto;
+
+    margin-top: 4px;
+    margin-bottom: 0;
+
+    color: #e74c3c;
+    font-size: 12px;
+    line-height: 18px;
+
+    /* ถ้ายาวให้ขึ้นบรรทัดใหม่ได้ */
+    white-space: normal;
+    overflow-wrap: break-word;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+#registerButton {
+    display: block;
+
+    width: 430px;
+    max-width: 100%;
+    height: 50px;
+
+    margin-top: 8px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #ed9a25;
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+    font-family: inherit;
+
+    cursor: pointer;
+    box-sizing: border-box;
+
+    transition: 0.2s ease;
+}
+
+#registerButton:disabled {
+    background: #d8d8d8;
+    color: #999;
+    cursor: not-allowed;
+}
+
+#registerButton:not(:disabled):hover {
+    background: #d97f10;
+}
+
+
+/* ================= FORM VALIDATION ================= */
+
+.form-group {
+    position: relative;
+}
+
+.form-group input.input-error {
+    border: 2px solid #e74c3c;
+    background: #fff8f8;
+}
+
+.form-group input.input-success {
+    border: 2px solid #4caf50;
+}
+
+.error-message {
+    display: block;
+    min-height: 18px;
+    margin-top: 5px;
+    color: #e74c3c;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* ปุ่มลงทะเบียน */
+#registerButton {
+    width: 100%;
+    height: 52px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #ed9a25;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* ยังกรอกไม่ครบ */
+#registerButton:disabled {
+    background: #cccccc;
+    color: #888888;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* กรอกครบแล้ว */
+#registerButton:not(:disabled):hover {
+    background: #d97f10;
+    transform: translateY(-1px);
+}
+
+/* =========================
+   FORM LAYOUT - จัดช่องกรอก
+========================= */
+
+.form-box {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 22px;
+    box-sizing: border-box;
+}
+
+.form-group label {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.form-group label span {
+    color: #e74c3c;
+    margin-left: 3px;
+}
+
+/* ช่องกรอกทุกช่องให้ขนาดเท่ากัน */
+.form-group input {
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+    border: 1px solid #d8d8d8;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #333;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease,
+                background 0.2s ease;
+}
+
+/* ตอนกดช่อง */
+.form-group input:focus {
+    border-color: #ed9a25;
+    box-shadow: 0 0 0 3px rgba(237, 154, 37, 0.12);
+}
+
+/* Placeholder */
+.form-group input::placeholder {
+    color: #aaa;
+    opacity: 1;
+}
+
+
+/* =========================
+   ERROR MESSAGE
+========================= */
+
+.error-message {
+    display: block;
+
+    /* จองพื้นที่ไว้ทุกช่อง */
+    height: 18px;
+
+    margin-top: 5px;
+    margin-bottom: 0;
+
+    color: #e74c3c;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+
+    /* ไม่ให้ข้อความยาวจนทำให้ layout พัง */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   ERROR / SUCCESS
+========================= */
+
+.form-group input.input-error {
+    border: 2px solid #e74c3c;
+    background: #fffafa;
+}
+
+.form-group input.input-success {
+    border: 2px solid #4caf50;
+    background: #ffffff;
+}
+
+
+/* =========================
+   REGISTER BUTTON
+========================= */
+
+#registerButton {
+    display: block;
+    width: 150px;
+    height: 52px;
+
+    margin-top: 8px;
+    margin-bottom: 40px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #ed9a25;
+    color: #ffffff;
+
+    font-size: 18px;
+    font-weight: bold;
+    font-family: inherit;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition: 0.2s ease;
+}
+
+#registerButton:disabled {
+    background: #d8d8d8;
+    color: #999999;
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+#registerButton:not(:disabled):hover {
+    background: #d97f10;
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+   /* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .form-box {
+        width: 100%;
+    }
+
+    .form-group input,
+    .error-message,
+    #registerButton {
+        width: 100%;
+    }
+
+    .form-group input {
+        height: 44px;
+        font-size: 14px;
+    }
+
+    .form-group label {
+        font-size: 15px;
+    }
+
+    .error-message {
+        font-size: 11px;
+    }
+}
+}
+
